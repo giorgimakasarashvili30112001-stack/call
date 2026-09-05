@@ -1,0 +1,2 @@
+- [Call recording platform limits](call-recording-platform-limits.md) — local mic capture is feasible in Expo; carrier calls, remote VoIP audio, and portable MP3 need separate native work.
+- [Expo config plugins with pnpm](expo-pnpm-config-plugin.md) — local config plugins must directly declare their Expo config-plugin runtime.

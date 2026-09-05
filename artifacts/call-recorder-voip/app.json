@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Call Recorder VoIP",
+    "slug": "call-recorder-voip",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "call-recorder-voip",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Record both sides of consented in-app calls and keep the audio on this device."
+      }
+    },
+    "android": {
+      "package": "com.callrecorder.voip",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-audio",
+      "./plugins/withAndroidCallRecorder"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
